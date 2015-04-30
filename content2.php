@@ -18,7 +18,7 @@ session_start();
 
 	
 
-		if ($_POST['username'] == null)
+		if ($_SESSION['username'] == null)
 		{
 		print_r('Human, you must enter your slave name. ');
 		?>
@@ -29,27 +29,13 @@ session_start();
 		<?php
 		}
 		else
-		{	// this section of code was copied from the lecture
-			if(session_status() == PHP_SESSION_ACTIVE)
-			{
-				if(isset($_POST['username']))
-				{
-					$_SESSION['username'] = $_POST['username'];
-				}
-
-				if(!isset($_SESSION['visits']))
-				{
-					$_SESSION['visits'] = 0;
-				}
-
-				$_SESSION['visits']++;
-				echo "Hi $_SESSION[username], you have visited this page $_SESSION[visits] times. \n";
-			}
+		{
+			echo "Hi $_SESSION[username], you have visited this page $_SESSION[visits] times. \n";
+			echo "<br>";
+			echo "<a href = 'http://web.engr.oregonstate.edu/~dinhd/Ass4/content2.php'> Click Here to go to the content2.php page </a>";
+		
 		}
 	?>
-
-	<br>
-	<a href = "http://web.engr.oregonstate.edu/~dinhd/Ass4/content1.php"> Click Here to go to the content1.php page </a>	
 </section>
 
 </body>
