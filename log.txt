@@ -1,0 +1,11 @@
+Start: Thu, 30 Apr 2015 15:35:21 -0700
+End: Thu, 30 Apr 2015 16:05:21 -0700
+Tasks: Fixed URL displays for content1 and content2 started at 3:30
+
+Start:Wed, 29 Apr 2015 00:00:00 -0700
+End: Wed, 29 Apr 2015 00:01:02 -0700
+Tasks: added content2
+
+Start:Tue, 28 Apr 2015 19:00:00 -0700
+End: Tue, 28 Apr 2015 23:59:59 -0700
+Tasks: Finished multtable.php started on loopback  finished loopback.php finished username verification  
